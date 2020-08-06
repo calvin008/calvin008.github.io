@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-06T09:02:23.179Z</updated>
+  <updated>2020-08-06T09:48:54.090Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,17 @@
     <link href="http://yoursite.com/2020/08/06/hexo-github%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2020/08/06/hexo-github%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-08-06T09:02:23.000Z</published>
-    <updated>2020-08-06T09:02:23.179Z</updated>
+    <updated>2020-08-06T09:48:54.090Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="第一步：下载并安装nodejs"><a href="#第一步：下载并安装nodejs" class="headerlink" title="第一步：下载并安装nodejs"></a>第一步：下载并安装nodejs</h3><p>下载地址</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;</span><br></pre></td></tr></table></figure><p>验证是否安装成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><h3 id="第二步：-安装cnpm"><a href="#第二步：-安装cnpm" class="headerlink" title="第二步： 安装cnpm"></a>第二步： 安装cnpm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>验证cnpm是否安装成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure><h3 id="第三步：-安装hexo框架"><a href="#第三步：-安装hexo框架" class="headerlink" title="第三步： 安装hexo框架"></a>第三步： 安装hexo框架</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>安装后验证下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><h3 id="第四步：初始化项目本地运行"><a href="#第四步：初始化项目本地运行" class="headerlink" title="第四步：初始化项目本地运行"></a>第四步：初始化项目本地运行</h3><p>dir创建一个文件夹hexo-blog，在当前文件夹下初始化hexo，并且本地运行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;初始化项目</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;本地运行</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><h3 id="第五步：部署到github"><a href="#第五步：部署到github" class="headerlink" title="第五步：部署到github"></a>第五步：部署到github</h3><p>Github上新建repository</p><p>名称必须用github的username+.github.io</p><p>比如我的Git用户名为 calvin008,就起名为calvin008.github.io</p><p>安装部署工具</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure><p>在hexo-blog目录下_config.yml文件修改deploy</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;calvin008&#x2F;calvin008.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>这个时候执行两个命令就能自动部署</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>查看</p><p>访问username.github.io即可</p><h3 id="第六步：绑定域名"><a href="#第六步：绑定域名" class="headerlink" title="第六步：绑定域名"></a>第六步：绑定域名</h3><p>ping calvin008.github.io</p><p>得到网址ip</p><p>绑定 到我万网域名解析</p><ul><li>万网的域名控制台，点击”域名和网站”中的”域名解析”</li><li>解析：<ul><li>记录类型选A 【ip地址】或CNAME【域名】</li><li>解析记录设置两个www和@</li><li>TTL指域名解析生效时间</li></ul></li></ul><h2 id><a href="#" class="headerlink" title></a></h2><p>新增 CNAME 文件</p><p>目录 hexo/source/CNAME</p><hr><p>在 github 上面，打开 <a href="http://username.github.io/">username.github.io</a> 项目的（Settings）设置，然后在 <code>GitHub Pages</code>的 <code>Custom domain</code>设置里填上购买的域名</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;第一步：下载并安装nodejs&quot;&gt;&lt;a href=&quot;#第一步：下载并安装nodejs&quot; class=&quot;headerlink&quot; title=&quot;第一步：下载并安装nodejs&quot;&gt;&lt;/a&gt;第一步：下载并安装nodejs&lt;/h3&gt;&lt;p&gt;下载地址&lt;/p&gt;
+&lt;figure c
+      
     
     </summary>
     
