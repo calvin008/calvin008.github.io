@@ -2,21 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/ckdjk2oz10001j0nl7q9i1ehr/</loc>
-    
-    <lastmod>2020-08-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/ckdjk2oz70003j0nl6bjocau9/</loc>
-    
-    <lastmod>2020-08-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/ckdjk2oz50002j0nlamfl5brb/</loc>
+    <loc>http://yoursite.com/2020/ckdjp0huu0003vsnl9jef8sff/</loc>
     
     <lastmod>2020-08-07</lastmod>
     
@@ -24,6 +10,20 @@
   
   <url>
     <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2020-08-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/ckdjp0hu20001vsnl7isy5skh/</loc>
+    
+    <lastmod>2020-08-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/ckdjp0hun0002vsnl5sh5bkek/</loc>
     
     <lastmod>2020-08-07</lastmod>
     
@@ -39,5 +39,12 @@
 
   
 
+  
+  <url>
+    <loc>http://yoursite.com/categories/Hexo/</loc>
+    <lastmod>2020-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
