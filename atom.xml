@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://weimumu.top/"/>
-  <updated>2020-08-30T14:49:25.684Z</updated>
+  <updated>2020-08-30T15:10:14.225Z</updated>
   <id>http://weimumu.top/</id>
   
   <author>
@@ -18,18 +18,21 @@
   
   <entry>
     <title>【unicloud】小程序云开发免费教程-持续更新云开发小程序案例</title>
-    <link href="http://weimumu.top/2020/ckeh7mrzn0006w8nl1k7r6y4t/"/>
-    <id>http://weimumu.top/2020/ckeh7mrzn0006w8nl1k7r6y4t/</id>
+    <link href="http://weimumu.top/2020/ckeh8fpy20006nsnlhbsn93hs/"/>
+    <id>http://weimumu.top/2020/ckeh8fpy20006nsnlhbsn93hs/</id>
     <published>2020-08-30T12:22:01.000Z</published>
-    <updated>2020-08-30T14:49:25.684Z</updated>
+    <updated>2020-08-30T15:10:14.225Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h4><h4 id="uni-id-统一的登录模块"><a href="#uni-id-统一的登录模块" class="headerlink" title="uni-id 统一的登录模块"></a>uni-id 统一的登录模块</h4><ul><li>注册、登录、发送短信验证码、密码加密保存、修改密码、token管理（短信验证码功能需要HBuilderX 2.8.3+）</li><li>三方登录：App中的微信登录、微信小程序中的微信登录、支付宝小程序中的支付宝账户登录</li></ul>]]></content>
+    <content type="html"><![CDATA[<h4 id="留言板"><a href="#留言板" class="headerlink" title="留言板"></a>留言板</h4><p>留言板添加</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">    <iframe src="//player.bilibili.com/player.html?aid=668741066&bvid=BV1ya4y1h7VJ&cid=208055744&page=4 &high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;"> </iframe></div><p>留言板查询和删除</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">    <iframe src="//player.bilibili.com/player.html?aid=668741066&bvid=BV1ya4y1h7VJ&cid=208055744&page=5 &high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;"> </iframe></div><h4 id="uni-id-统一的登录模块"><a href="#uni-id-统一的登录模块" class="headerlink" title="uni-id 统一的登录模块"></a>uni-id 统一的登录模块</h4><ul><li>注册、登录、发送短信验证码、密码加密保存、修改密码、token管理（短信验证码功能需要HBuilderX 2.8.3+）</li><li>三方登录：App中的微信登录、微信小程序中的微信登录、支付宝小程序中的支付宝账户登录</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;留言板&quot;&gt;&lt;a href=&quot;#留言板&quot; class=&quot;headerlink&quot; title=&quot;留言板&quot;&gt;&lt;/a&gt;留言板&lt;/h4&gt;&lt;h4 id=&quot;uni-id-统一的登录模块&quot;&gt;&lt;a href=&quot;#uni-id-统一的登录模块&quot; class=&quot;headerlink&quot; 
+        &lt;h4 id=&quot;留言板&quot;&gt;&lt;a href=&quot;#留言板&quot; class=&quot;headerlink&quot; title=&quot;留言板&quot;&gt;&lt;/a&gt;留言板&lt;/h4&gt;&lt;p&gt;留言板添加&lt;/p&gt;
+
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0
       
     
     </summary>
@@ -42,8 +45,8 @@
   
   <entry>
     <title>hexo博客嵌入B站视频并且设置为1080p</title>
-    <link href="http://weimumu.top/2020/ckeh7mrzm0005w8nl7ma6ds7a/"/>
-    <id>http://weimumu.top/2020/ckeh7mrzm0005w8nl7ma6ds7a/</id>
+    <link href="http://weimumu.top/2020/ckeh8fpy10005nsnldb2od746/"/>
+    <id>http://weimumu.top/2020/ckeh8fpy10005nsnldb2od746/</id>
     <published>2020-08-10T05:43:01.000Z</published>
     <updated>2020-08-11T00:43:04.934Z</updated>
     
@@ -69,8 +72,8 @@
   
   <entry>
     <title>【实战】uni-app+unicloud仿奈雪的茶</title>
-    <link href="http://weimumu.top/2020/ckeh7ms10000fw8nl1l1xe25o/"/>
-    <id>http://weimumu.top/2020/ckeh7ms10000fw8nl1l1xe25o/</id>
+    <link href="http://weimumu.top/2020/ckeh8fpz2000fnsnlca0teglk/"/>
+    <id>http://weimumu.top/2020/ckeh8fpz2000fnsnlca0teglk/</id>
     <published>2020-08-07T23:38:39.000Z</published>
     <updated>2020-08-29T08:34:37.756Z</updated>
     
@@ -93,8 +96,8 @@
   
   <entry>
     <title>Hexo-theme-butterfly修改调整教程</title>
-    <link href="http://weimumu.top/2020/ckeh7mrzd0001w8nlddjp9csi/"/>
-    <id>http://weimumu.top/2020/ckeh7mrzd0001w8nlddjp9csi/</id>
+    <link href="http://weimumu.top/2020/ckeh8fpxr0001nsnl7azy09ll/"/>
+    <id>http://weimumu.top/2020/ckeh8fpxr0001nsnl7azy09ll/</id>
     <published>2020-08-07T01:29:13.000Z</published>
     <updated>2020-08-07T23:41:16.063Z</updated>
     
@@ -117,8 +120,8 @@
   
   <entry>
     <title>hexo创建分类和tag</title>
-    <link href="http://weimumu.top/2020/ckeh7mrzl0004w8nl7mtkgbr7/"/>
-    <id>http://weimumu.top/2020/ckeh7mrzl0004w8nl7mtkgbr7/</id>
+    <link href="http://weimumu.top/2020/ckeh8fpy00004nsnlf980ganl/"/>
+    <id>http://weimumu.top/2020/ckeh8fpy00004nsnlf980ganl/</id>
     <published>2020-08-07T00:22:24.000Z</published>
     <updated>2020-08-07T03:51:30.367Z</updated>
     
@@ -143,8 +146,8 @@
   
   <entry>
     <title>hexo+github从0开始创建个人博客</title>
-    <link href="http://weimumu.top/2020/ckeh7mrzh0002w8nlav746khc/"/>
-    <id>http://weimumu.top/2020/ckeh7mrzh0002w8nlav746khc/</id>
+    <link href="http://weimumu.top/2020/ckeh8fpxw0002nsnl7byz1xqq/"/>
+    <id>http://weimumu.top/2020/ckeh8fpxw0002nsnl7byz1xqq/</id>
     <published>2020-08-06T09:02:23.000Z</published>
     <updated>2020-08-11T10:57:37.989Z</updated>
     
