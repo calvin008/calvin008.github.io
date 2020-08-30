@@ -2,35 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://weimumu.top/2020/ckefeqc22000cqcnl2756a7xr/</loc>
+    <loc>http://weimumu.top/2020/ckeh73zip000624nlgagw0mgr/</loc>
+    
+    <lastmod>2020-08-30</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://weimumu.top/2020/ckeh73zk9000f24nl3do73vda/</loc>
     
     <lastmod>2020-08-29</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckefeqbzd0001qcnl4muw5zzm/</loc>
+    <loc>http://weimumu.top/2020/ckeh73zih000224nl2mtq2nzl/</loc>
     
     <lastmod>2020-08-11</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckefeqc010005qcnlbpsgdn5d/</loc>
+    <loc>http://weimumu.top/2020/ckeh73zio000524nl6x0dft6q/</loc>
     
     <lastmod>2020-08-11</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckefeqbzp0002qcnl1u632b0a/</loc>
+    <loc>http://weimumu.top/2020/ckeh73zic000124nlgb5bgto9/</loc>
     
     <lastmod>2020-08-07</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckefeqbzz0004qcnl3n9rgml7/</loc>
+    <loc>http://weimumu.top/2020/ckeh73zim000424nl6zqn45sh/</loc>
     
     <lastmod>2020-08-07</lastmod>
     
@@ -46,7 +53,7 @@
 
   <url>
     <loc>http://weimumu.top/</loc>
-    <lastmod>2020-08-29</lastmod>
+    <lastmod>2020-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -56,14 +63,21 @@
   
   <url>
     <loc>http://weimumu.top/categories/Hexo/</loc>
-    <lastmod>2020-08-29</lastmod>
+    <lastmod>2020-08-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://weimumu.top/categories/unicloud/</loc>
+    <lastmod>2020-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weimumu.top/categories/%E5%AE%9E%E6%88%98%E8%AF%BE%E7%A8%8B/</loc>
-    <lastmod>2020-08-29</lastmod>
+    <lastmod>2020-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
