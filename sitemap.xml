@@ -2,42 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://weimumu.top/2020/ckejtgc5n000fp8nleiz6dv5c/</loc>
+    <loc>http://weimumu.top/2020/ckel9avmn0002z8nlhxa6foos/</loc>
+    
+    <lastmod>2020-09-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://weimumu.top/2020/ckel9avoi000hz8nl6fi362m8/</loc>
     
     <lastmod>2020-09-01</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckejtgc4k0006p8nla27x30rq/</loc>
+    <loc>http://weimumu.top/2020/ckel9avmu0006z8nl1rpaekox/</loc>
     
     <lastmod>2020-09-01</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckejtgc4d0002p8nlgz6u6zwr/</loc>
+    <loc>http://weimumu.top/2020/ckel9avmr0004z8nlhmpn4yir/</loc>
     
     <lastmod>2020-08-11</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckejtgc4k0005p8nl0h0ycuip/</loc>
+    <loc>http://weimumu.top/2020/ckel9avmw0008z8nlh8zydwli/</loc>
     
     <lastmod>2020-08-11</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckejtgc490001p8nlhtuo0w50/</loc>
+    <loc>http://weimumu.top/2020/ckel9avmj0001z8nl7pjz78hp/</loc>
     
     <lastmod>2020-08-07</lastmod>
     
   </url>
   
   <url>
-    <loc>http://weimumu.top/2020/ckejtgc4i0004p8nlb1yd0ujc/</loc>
+    <loc>http://weimumu.top/2020/ckel9avmt0005z8nl67uo6g9r/</loc>
     
     <lastmod>2020-08-07</lastmod>
     
@@ -53,7 +60,7 @@
 
   <url>
     <loc>http://weimumu.top/</loc>
-    <lastmod>2020-09-01</lastmod>
+    <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -63,21 +70,28 @@
   
   <url>
     <loc>http://weimumu.top/categories/Hexo/</loc>
-    <lastmod>2020-09-01</lastmod>
+    <lastmod>2020-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://weimumu.top/categories/vue/</loc>
+    <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weimumu.top/categories/unicloud/</loc>
-    <lastmod>2020-09-01</lastmod>
+    <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weimumu.top/categories/%E5%AE%9E%E6%88%98%E8%AF%BE%E7%A8%8B/</loc>
-    <lastmod>2020-09-01</lastmod>
+    <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
