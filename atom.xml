@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://weimumu.top/"/>
-  <updated>2020-09-03T00:58:41.681Z</updated>
+  <updated>2020-09-03T01:02:56.152Z</updated>
   <id>http://weimumu.top/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>VUE3.0视频教程2020最新全套应用实战项目</title>
-    <link href="http://weimumu.top/2020/ckem3pt5h00012onl5t658xla/"/>
-    <id>http://weimumu.top/2020/ckem3pt5h00012onl5t658xla/</id>
+    <link href="http://weimumu.top/2020/ckem3zc2u000208nl4syi6qcg/"/>
+    <id>http://weimumu.top/2020/ckem3zc2u000208nl4syi6qcg/</id>
     <published>2020-09-02T07:40:30.000Z</published>
-    <updated>2020-09-03T00:58:41.681Z</updated>
+    <updated>2020-09-03T01:02:56.152Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="vue3-0入门到精通"><a href="#vue3-0入门到精通" class="headerlink" title="vue3.0入门到精通"></a>vue3.0入门到精通</h3><h4 id="vue3-0-安装"><a href="#vue3-0-安装" class="headerlink" title="vue3.0 安装"></a>vue3.0 安装</h4><iframe src="//player.bilibili.com/player.html?aid=414394899&bvid=BV13V411S79q&cid=231695368&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>如果之前安装过vue的2.0版本，你需要把2.0相关的删除</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uni -g vue-cli</span><br></pre></td></tr></table></figure><p>安装vue/cli脚架</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g @vue&#x2F;cli</span><br></pre></td></tr></table></figure><p>检查版本号</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue -V</span><br></pre></td></tr></table></figure><p>创建:在命令窗口输入指令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create 项目名称</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="vue3-0入门到精通"><a href="#vue3-0入门到精通" class="headerlink" title="vue3.0入门到精通"></a>vue3.0入门到精通</h3><h4 id="vue3-0-安装"><a href="#vue3-0-安装" class="headerlink" title="vue3.0 安装"></a>vue3.0 安装</h4><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">    <iframe src="https:///player.bilibili.com/player.html?aid=414394899&bvid=BV13V411S79q&cid=231695368&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;"> </iframe></div><p>前安装过vue的2.0版本，你需要把2.0相关的删除</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uni -g vue-cli</span><br></pre></td></tr></table></figure><p>安装vue/cli脚架</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g @vue&#x2F;cli</span><br></pre></td></tr></table></figure><p>检查版本号</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue -V</span><br></pre></td></tr></table></figure><p>创建:在命令窗口输入指令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create 项目名称</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>【unicloud】小程序云开发免费教程-持续更新云开发小程序案例</title>
-    <link href="http://weimumu.top/2020/ckem3pt5s00082onleft4b5sd/"/>
-    <id>http://weimumu.top/2020/ckem3pt5s00082onleft4b5sd/</id>
+    <link href="http://weimumu.top/2020/ckem3zc39000808nl4j98am28/"/>
+    <id>http://weimumu.top/2020/ckem3zc39000808nl4j98am28/</id>
     <published>2020-08-30T12:22:01.000Z</published>
     <updated>2020-09-01T01:44:07.939Z</updated>
     
@@ -69,8 +69,8 @@
   
   <entry>
     <title>hexo博客嵌入B站视频并且设置为1080p</title>
-    <link href="http://weimumu.top/2020/ckem3pt5q00062onl1z2w476r/"/>
-    <id>http://weimumu.top/2020/ckem3pt5q00062onl1z2w476r/</id>
+    <link href="http://weimumu.top/2020/ckem3zc37000608nl3nywgx50/"/>
+    <id>http://weimumu.top/2020/ckem3zc37000608nl3nywgx50/</id>
     <published>2020-08-10T05:43:01.000Z</published>
     <updated>2020-08-11T00:43:04.934Z</updated>
     
@@ -96,8 +96,8 @@
   
   <entry>
     <title>【实战】uni-app+unicloud仿奈雪的茶</title>
-    <link href="http://weimumu.top/2020/ckem3pt64000j2onlccep9duu/"/>
-    <id>http://weimumu.top/2020/ckem3pt64000j2onlccep9duu/</id>
+    <link href="http://weimumu.top/2020/ckem3zc4o000h08nlcj7kcl3g/"/>
+    <id>http://weimumu.top/2020/ckem3zc4o000h08nlcj7kcl3g/</id>
     <published>2020-08-07T23:38:39.000Z</published>
     <updated>2020-09-03T00:52:39.742Z</updated>
     
@@ -120,8 +120,8 @@
   
   <entry>
     <title>Hexo-theme-butterfly修改调整教程</title>
-    <link href="http://weimumu.top/2020/ckem3pt5l00022onl2jimb4c3/"/>
-    <id>http://weimumu.top/2020/ckem3pt5l00022onl2jimb4c3/</id>
+    <link href="http://weimumu.top/2020/ckem3zc2n000108nlfkxx4kmt/"/>
+    <id>http://weimumu.top/2020/ckem3zc2n000108nlfkxx4kmt/</id>
     <published>2020-08-07T01:29:13.000Z</published>
     <updated>2020-08-07T23:41:16.063Z</updated>
     
@@ -144,8 +144,8 @@
   
   <entry>
     <title>hexo创建分类和tag</title>
-    <link href="http://weimumu.top/2020/ckem3pt5p00052onlekzd5nco/"/>
-    <id>http://weimumu.top/2020/ckem3pt5p00052onlekzd5nco/</id>
+    <link href="http://weimumu.top/2020/ckem3zc35000508nlhgas2sn2/"/>
+    <id>http://weimumu.top/2020/ckem3zc35000508nlhgas2sn2/</id>
     <published>2020-08-07T00:22:24.000Z</published>
     <updated>2020-08-07T03:51:30.367Z</updated>
     
@@ -170,8 +170,8 @@
   
   <entry>
     <title>hexo+github从0开始创建个人博客</title>
-    <link href="http://weimumu.top/2020/ckem3pt5o00042onleh8c8fa8/"/>
-    <id>http://weimumu.top/2020/ckem3pt5o00042onleh8c8fa8/</id>
+    <link href="http://weimumu.top/2020/ckem3zc30000408nlfjnt4bkx/"/>
+    <id>http://weimumu.top/2020/ckem3zc30000408nlfjnt4bkx/</id>
     <published>2020-08-06T09:02:23.000Z</published>
     <updated>2020-08-11T10:57:37.989Z</updated>
     
