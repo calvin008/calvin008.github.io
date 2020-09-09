@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://weimumu.top/"/>
-  <updated>2020-09-09T08:59:21.430Z</updated>
+  <updated>2020-09-09T15:24:13.904Z</updated>
   <id>http://weimumu.top/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>VUE3.0视频教程2020最新全套应用实战项目</title>
-    <link href="http://weimumu.top/2020/ckev9lf9w0002ognlaz6i5cq6/"/>
-    <id>http://weimumu.top/2020/ckev9lf9w0002ognlaz6i5cq6/</id>
+    <link href="http://weimumu.top/2020/ckevjbh5c0002ssnlak0g0tbb/"/>
+    <id>http://weimumu.top/2020/ckevjbh5c0002ssnlak0g0tbb/</id>
     <published>2020-09-02T07:40:30.000Z</published>
-    <updated>2020-09-09T08:59:21.430Z</updated>
+    <updated>2020-09-09T15:24:13.904Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="vue3-0入门到精通"><a href="#vue3-0入门到精通" class="headerlink" title="vue3.0入门到精通"></a>vue3.0入门到精通</h3><h4 id="vue3-0-安装"><a href="#vue3-0-安装" class="headerlink" title="vue3.0 安装"></a>vue3.0 安装</h4><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">    <iframe src="https:///player.bilibili.com/player.html?aid=414394899&bvid=BV13V411S79q&cid=231695368&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;"> </iframe></div><p>前安装过vue的2.0版本，你需要把2.0相关的删除</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uni -g vue-cli</span><br></pre></td></tr></table></figure><p>安装vue/cli脚架</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g @vue&#x2F;cli</span><br></pre></td></tr></table></figure><p>检查版本号,目前安装vuecli 4.5.4</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue -V</span><br></pre></td></tr></table></figure><p>创建:在命令窗口输入指令</p><p>选择default vue 3</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create 项目名称</span><br></pre></td></tr></table></figure><h4 id="vue-composition-API"><a href="#vue-composition-API" class="headerlink" title="vue composition API"></a>vue composition API</h4><p>vue3.0 侧重于解决代码组织与逻辑复用问题</p><p>目前，我们使用的是“options”API 构建组件。 为了将逻辑添加到Vue组件中，我们填充（options）属性，如data、methods、computed等。 这种方法最大的缺点是，它本身不是一个工作的JavaScript代码。 您需要确切地知道模板中可以访问哪些属性以及this关键字的行为。在底层，Vue编译器需要将此属性转换为工作代码。正因为如此，我们无法从自动建议或类型检查中获益。</p><p>Composition API希望将通过当前组件属性、可用的机制公开为JavaScript函数来解决这个问题。 Vue核心团队将组件Composition API描述为“一套附加的、基于函数的api，允许灵活地组合组件逻辑”。 使用Composition API编写的代码更易读，并且场景不复杂，这使得阅读和学习变得更容易。</p><p>让我们看到一个非常简单的组件示例，它使用新的组件Composition API来理解它是如何工作的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;button @click&#x3D;&quot;increment&quot;&gt;</span><br><span class="line">    Count is: &#123;&#123; count &#125;&#125;, double is &#123;&#123; double &#125;&#125;, click to increment.</span><br><span class="line">  &lt;&#x2F;button&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import &#123; ref, computed, onMounted &#125; from &#39;vue&#39;</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  setup() &#123;</span><br><span class="line">    const count &#x3D; ref(0)</span><br><span class="line">    const double &#x3D; computed(() &#x3D;&gt; count.value * 2)</span><br><span class="line"></span><br><span class="line">    function increment() &#123;</span><br><span class="line">      count.value++</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    onMounted(() &#x3D;&gt; console.log(&#39;component mounted!&#39;))</span><br><span class="line"></span><br><span class="line">    return &#123;</span><br><span class="line">      count,</span><br><span class="line">      double,</span><br><span class="line">      increment</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure><h5 id="setup"><a href="#setup" class="headerlink" title="setup"></a>setup</h5><p>vue3.0将组件的逻辑都写在了函数内部,setup()会取代vue2.x的data()函数,返回一个对象,暴露给模板,而且只在初始化的时候调用一次,因为值可以被跟踪</p><h5 id="reactive"><a href="#reactive" class="headerlink" title="reactive"></a>reactive</h5><h5 id="toRefs"><a href="#toRefs" class="headerlink" title="toRefs"></a>toRefs</h5><h5 id="computed"><a href="#computed" class="headerlink" title="computed"></a><strong>computed</strong></h5><h5 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h5>]]></content>
+    <content type="html"><![CDATA[<h3 id="vue3-0入门到精通"><a href="#vue3-0入门到精通" class="headerlink" title="vue3.0入门到精通"></a>vue3.0入门到精通</h3><h4 id="vue3-0-安装"><a href="#vue3-0-安装" class="headerlink" title="vue3.0 安装"></a>vue3.0 安装</h4><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">    <iframe src="https:///player.bilibili.com/player.html?aid=414394899&bvid=BV13V411S79q&cid=231695368&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;"> </iframe></div><p>前安装过vue的2.0版本，你需要把2.0相关的删除</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uni -g vue-cli</span><br></pre></td></tr></table></figure><p>安装vue/cli脚架</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g @vue&#x2F;cli</span><br></pre></td></tr></table></figure><p>检查版本号,目前安装vuecli 4.5.4</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue -V</span><br></pre></td></tr></table></figure><p>创建:在命令窗口输入指令</p><p>选择default vue 3</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create 项目名称</span><br></pre></td></tr></table></figure><h4 id="vue-composition-API"><a href="#vue-composition-API" class="headerlink" title="vue composition API"></a>vue composition API</h4><p>vue3.0 侧重于解决代码组织与逻辑复用问题</p><p>目前，我们使用的是“options”API 构建组件。 为了将逻辑添加到Vue组件中，我们填充（options）属性，如data、methods、computed等。 这种方法最大的缺点是，它本身不是一个工作的JavaScript代码。 您需要确切地知道模板中可以访问哪些属性以及this关键字的行为。在底层，Vue编译器需要将此属性转换为工作代码。正因为如此，我们无法从自动建议或类型检查中获益。</p><p>Composition API希望将通过当前组件属性、可用的机制公开为JavaScript函数来解决这个问题。 Vue核心团队将组件Composition API描述为“一套附加的、基于函数的api，允许灵活地组合组件逻辑”。 使用Composition API编写的代码更易读，并且场景不复杂，这使得阅读和学习变得更容易。</p><p>让我们看到一个非常简单的组件示例，它使用新的组件Composition API来理解它是如何工作的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">    &lt;img alt&#x3D;&quot;Vue logo&quot; src&#x3D;&quot;.&#x2F;assets&#x2F;logo.png&quot;&gt;</span><br><span class="line">    &lt;div&gt;&#123;&#123;msg&#125;&#125;年龄为&#123;&#123;age&#125;&#125;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;button @click&#x3D;&quot;add&quot;&gt; + &lt;&#x2F;button&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;App&#39;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      msg:&#39;王大合&#39;,</span><br><span class="line">      age:18</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods:&#123;</span><br><span class="line">    add() &#123;</span><br><span class="line">      this.age +&#x3D; 1</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure><h5 id="setup"><a href="#setup" class="headerlink" title="setup"></a>setup</h5><p>vue3.0将组件的逻辑都写在了函数内部,setup()会取代vue2.x的data()函数,返回一个对象,暴露给模板,而且只在初始化的时候调用一次,因为值可以被跟踪,所以我们通过vue3来改变编程习惯</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">setup() &#123;</span><br><span class="line">   const msg &#x3D; ref(&#39;王大合&#39;)</span><br><span class="line">   const age &#x3D; ref(18)</span><br><span class="line">   function add() &#123;</span><br><span class="line">     age.value +&#x3D;1</span><br><span class="line">   &#125;</span><br><span class="line">   return &#123;msg,age,add&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure><h5 id="reactive"><a href="#reactive" class="headerlink" title="reactive"></a>reactive</h5><h5 id="toRefs"><a href="#toRefs" class="headerlink" title="toRefs"></a>toRefs</h5><h5 id="computed"><a href="#computed" class="headerlink" title="computed"></a><strong>computed</strong></h5><h5 id="watch"><a href="#watch" class="headerlink" title="watch"></a><strong>watch</strong></h5>]]></content>
     
     <summary type="html">
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>【unicloud】小程序云开发免费教程-持续更新云开发小程序案例</title>
-    <link href="http://weimumu.top/2020/ckev9lfa8000eognl4e7edt9q/"/>
-    <id>http://weimumu.top/2020/ckev9lfa8000eognl4e7edt9q/</id>
+    <link href="http://weimumu.top/2020/ckevjbh5k0008ssnl3qsn7ibe/"/>
+    <id>http://weimumu.top/2020/ckevjbh5k0008ssnl3qsn7ibe/</id>
     <published>2020-08-30T12:22:01.000Z</published>
     <updated>2020-09-01T01:44:07.939Z</updated>
     
@@ -69,8 +69,8 @@
   
   <entry>
     <title>hexo博客嵌入B站视频并且设置为1080p</title>
-    <link href="http://weimumu.top/2020/ckev9lfa20006ognlcb033j0j/"/>
-    <id>http://weimumu.top/2020/ckev9lfa20006ognlcb033j0j/</id>
+    <link href="http://weimumu.top/2020/ckevjbh5i0006ssnl5l2l4sp6/"/>
+    <id>http://weimumu.top/2020/ckevjbh5i0006ssnl5l2l4sp6/</id>
     <published>2020-08-10T05:43:01.000Z</published>
     <updated>2020-08-11T00:43:04.934Z</updated>
     
@@ -96,8 +96,8 @@
   
   <entry>
     <title>【实战】uni-app+unicloud仿奈雪的茶</title>
-    <link href="http://weimumu.top/2020/ckev9lfad000hognlabtz9eh9/"/>
-    <id>http://weimumu.top/2020/ckev9lfad000hognlabtz9eh9/</id>
+    <link href="http://weimumu.top/2020/ckevjbh5u000hssnl83jy2j9n/"/>
+    <id>http://weimumu.top/2020/ckevjbh5u000hssnl83jy2j9n/</id>
     <published>2020-08-07T23:38:39.000Z</published>
     <updated>2020-09-08T23:44:37.121Z</updated>
     
@@ -120,8 +120,8 @@
   
   <entry>
     <title>Hexo-theme-butterfly修改调整教程</title>
-    <link href="http://weimumu.top/2020/ckev9lf9s0001ognldm7b3f07/"/>
-    <id>http://weimumu.top/2020/ckev9lf9s0001ognldm7b3f07/</id>
+    <link href="http://weimumu.top/2020/ckevjbh580001ssnl1e3uewzb/"/>
+    <id>http://weimumu.top/2020/ckevjbh580001ssnl1e3uewzb/</id>
     <published>2020-08-07T01:29:13.000Z</published>
     <updated>2020-08-07T23:41:16.063Z</updated>
     
@@ -144,8 +144,8 @@
   
   <entry>
     <title>hexo创建分类和tag</title>
-    <link href="http://weimumu.top/2020/ckev9lfa00004ognlgfl4fjrc/"/>
-    <id>http://weimumu.top/2020/ckev9lfa00004ognlgfl4fjrc/</id>
+    <link href="http://weimumu.top/2020/ckevjbh5h0005ssnl3zny9v15/"/>
+    <id>http://weimumu.top/2020/ckevjbh5h0005ssnl3zny9v15/</id>
     <published>2020-08-07T00:22:24.000Z</published>
     <updated>2020-08-07T03:51:30.367Z</updated>
     
@@ -170,8 +170,8 @@
   
   <entry>
     <title>hexo+github从0开始创建个人博客</title>
-    <link href="http://weimumu.top/2020/ckev9lfa10005ognlf10kdcgk/"/>
-    <id>http://weimumu.top/2020/ckev9lfa10005ognlf10kdcgk/</id>
+    <link href="http://weimumu.top/2020/ckevjbh5g0004ssnlax1x34r5/"/>
+    <id>http://weimumu.top/2020/ckevjbh5g0004ssnlax1x34r5/</id>
     <published>2020-08-06T09:02:23.000Z</published>
     <updated>2020-08-11T10:57:37.989Z</updated>
     
