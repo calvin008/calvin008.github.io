@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://weimumu.top/"/>
-  <updated>2020-10-12T09:47:59.886Z</updated>
+  <updated>2020-10-12T10:32:25.402Z</updated>
   <id>http://weimumu.top/</id>
   
   <author>
@@ -18,12 +18,19 @@
   
   <entry>
     <title>vue3.0仿今日头条webApp</title>
-    <link href="http://weimumu.top/2020/ckg6e9ogl0008p8nl4iqqcf7l/"/>
-    <id>http://weimumu.top/2020/ckg6e9ogl0008p8nl4iqqcf7l/</id>
+    <link href="http://weimumu.top/2020/ckg6epigc0008t4nl02ea5tx6/"/>
+    <id>http://weimumu.top/2020/ckg6epigc0008t4nl02ea5tx6/</id>
     <published>2020-10-12T09:46:43.000Z</published>
-    <updated>2020-10-12T09:47:59.886Z</updated>
+    <updated>2020-10-12T10:32:25.402Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vue3-0-typescript仿今日头条webApp"><a href="#vue3-0-typescript仿今日头条webApp" class="headerlink" title="vue3.0+typescript仿今日头条webApp"></a>vue3.0+typescript仿今日头条webApp</h1><h2 id="创建项目以及安装依赖"><a href="#创建项目以及安装依赖" class="headerlink" title="创建项目以及安装依赖"></a>创建项目以及安装依赖</h2><h5 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 或者使用yarn</span><br><span class="line">yarn add -g create-vite-app</span><br><span class="line">yarn create vite-app &lt;project-name&gt;</span><br><span class="line">#yarn初始化packeage依赖,并且运行</span><br><span class="line">yarn </span><br><span class="line">yarn dev</span><br></pre></td></tr></table></figure><p>安装依赖</p><p>我需要使用</p><table><thead><tr><th>依赖库包</th></tr></thead><tbody><tr><td>typescript</td></tr><tr><td>vuex</td></tr><tr><td>vue-router</td></tr><tr><td>sass</td></tr></tbody></table><h5 id="引入typescript"><a href="#引入typescript" class="headerlink" title="引入typescript"></a>引入typescript</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 安装 typescript</span><br><span class="line"></span><br><span class="line">yarn add typescript -D</span><br></pre></td></tr></table></figure><p>初始化<code>tsconfig.json</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 然后在控制台执行下面命令</span><br><span class="line">npx tsc --init</span><br></pre></td></tr></table></figure><p>将<code>main.js</code>修改为<code>main.ts</code>,同时将<code>index.html</code>里面的引用也修改为<code>main.ts</code>,</p><p>然后在script 里添加 lang=”ts”</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;img alt&#x3D;&quot;Vue logo&quot; src&#x3D;&quot;.&#x2F;assets&#x2F;logo.png&quot; &#x2F;&gt;</span><br><span class="line">  &lt;HelloWorld msg&#x3D;&quot;Hello Vue 3.0 + Vite&quot; &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script lang&#x3D;&quot;ts&quot;&gt;</span><br><span class="line">import HelloWorld from &#39;.&#x2F;components&#x2F;HelloWorld.vue&#39;</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;App&#39;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    HelloWorld</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>修改完之后，重启就可以访问项目了。虽然这样配置是可以了，但是打开<code>main.ts</code>会发现<code>import App from App.vue</code>会报错:<code> Cannot find module &#39;./App.vue&#39; or its corresponding type declarations.</code>,这是因为现在<code>ts</code>还没有识别<code>vue</code>文件，需要进行下面的配置:</p><p>在项目根目录添加<code>shim.d.ts</code>文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># powerShell终端,也可以手动创建</span><br><span class="line">New-Item shim.d.ts</span><br></pre></td></tr></table></figure><p>添加以下内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">declare module &quot;*.vue&quot; &#123;</span><br><span class="line">  import &#123; Component &#125; from &quot;vue&quot;;</span><br><span class="line">  const component: Component;</span><br><span class="line">  export default component;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="安装vue-router"><a href="#安装vue-router" class="headerlink" title="安装vue-router"></a>安装vue-router</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add vue-router@4.0</span><br></pre></td></tr></table></figure><p>这样可以选择最新的vue-router 4.0.0的测试版本,这里更新到beta.13</p><h5 id="配置vue-router"><a href="#配置vue-router" class="headerlink" title="配置vue-router"></a>配置vue-router</h5><p>在项目<code>src</code>目录下面新建<code>router</code>目录，然后添加<code>index.ts</code>文件，在文件中添加以下内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import &#123;createRouter, createWebHashHistory&#125; from &#39;vue-router&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 在 Vue-router新版本中，需要使用createRouter来创建路由</span><br><span class="line">export default createRouter(&#123;</span><br><span class="line">  &#x2F;&#x2F; 指定路由的模式,此处使用的是hash模式</span><br><span class="line">  history: createWebHashHistory(),</span><br><span class="line">  &#x2F;&#x2F; 路由地址</span><br><span class="line">  routes: []</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h5 id="安装vuex"><a href="#安装vuex" class="headerlink" title="安装vuex"></a>安装vuex</h5><p>同上</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add vuex@4.0</span><br></pre></td></tr></table></figure><p>目前只能选择最新测试版</p><p>在项目<code>src</code>目录下面新建<code>store</code>目录，并添加<code>index.ts</code>文件，文件中添加以下内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import &#123; createStore &#125; from &#39;vuex&#39;</span><br><span class="line"></span><br><span class="line">interface State &#123;</span><br><span class="line">  userName: string</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default createStore(&#123;</span><br><span class="line">      state:&#123;</span><br><span class="line">      userName:&#39;王大合&#39;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>main.ts中引入vuex和vue-router</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import &#123; createApp &#125; from &#39;vue&#39;</span><br><span class="line">import App from &#39;.&#x2F;App.vue&#39;</span><br><span class="line">import &#39;.&#x2F;index.css&#39;</span><br><span class="line">import router from &#39;.&#x2F;router&#x2F;index&#39;</span><br><span class="line">import vuex from &#39;.&#x2F;store&#x2F;index&#39;</span><br><span class="line"></span><br><span class="line">const  app &#x3D; createApp(App)</span><br><span class="line"></span><br><span class="line">app.use(router)</span><br><span class="line">app.use(vuex)</span><br><span class="line">app.mount(&#39;#app&#39;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;vue3-0-typescript仿今日头条webApp&quot;&gt;&lt;a href=&quot;#vue3-0-typescript仿今日头条webApp&quot; class=&quot;headerlink&quot; title=&quot;vue3.0+typescript仿今日头条webApp&quot;&gt;&lt;/a&gt;vu
+      
     
     </summary>
     
@@ -35,8 +42,8 @@
   
   <entry>
     <title>VUE3.0视频教程2020最新全套应用实战项目</title>
-    <link href="http://weimumu.top/2020/ckg6e9ogb0002p8nl7b3y7r7n/"/>
-    <id>http://weimumu.top/2020/ckg6e9ogb0002p8nl7b3y7r7n/</id>
+    <link href="http://weimumu.top/2020/ckg6epig40002t4nl9tr94dij/"/>
+    <id>http://weimumu.top/2020/ckg6epig40002t4nl9tr94dij/</id>
     <published>2020-09-02T07:40:30.000Z</published>
     <updated>2020-10-09T10:35:58.645Z</updated>
     
@@ -59,8 +66,8 @@
   
   <entry>
     <title>【unicloud】小程序云开发免费教程-持续更新云开发小程序案例</title>
-    <link href="http://weimumu.top/2020/ckg6e9ogm0009p8nl1gl4bmat/"/>
-    <id>http://weimumu.top/2020/ckg6e9ogm0009p8nl1gl4bmat/</id>
+    <link href="http://weimumu.top/2020/ckg6epige0009t4nl1m1g8xfp/"/>
+    <id>http://weimumu.top/2020/ckg6epige0009t4nl1m1g8xfp/</id>
     <published>2020-08-30T12:22:01.000Z</published>
     <updated>2020-09-01T01:44:07.939Z</updated>
     
@@ -86,8 +93,8 @@
   
   <entry>
     <title>hexo博客嵌入B站视频并且设置为1080p</title>
-    <link href="http://weimumu.top/2020/ckg6e9ogj0006p8nlhle94a3h/"/>
-    <id>http://weimumu.top/2020/ckg6e9ogj0006p8nlhle94a3h/</id>
+    <link href="http://weimumu.top/2020/ckg6epigb0006t4nlb1mo8vq0/"/>
+    <id>http://weimumu.top/2020/ckg6epigb0006t4nlb1mo8vq0/</id>
     <published>2020-08-10T05:43:01.000Z</published>
     <updated>2020-08-11T00:43:04.934Z</updated>
     
@@ -113,8 +120,8 @@
   
   <entry>
     <title>【实战】uni-app+unicloud仿奈雪的茶</title>
-    <link href="http://weimumu.top/2020/ckg6e9ohj000jp8nl7egjdp4b/"/>
-    <id>http://weimumu.top/2020/ckg6e9ohj000jp8nl7egjdp4b/</id>
+    <link href="http://weimumu.top/2020/ckg6epih3000jt4nl2feg4d52/"/>
+    <id>http://weimumu.top/2020/ckg6epih3000jt4nl2feg4d52/</id>
     <published>2020-08-07T23:38:39.000Z</published>
     <updated>2020-09-24T01:03:30.829Z</updated>
     
@@ -137,8 +144,8 @@
   
   <entry>
     <title>Hexo-theme-butterfly修改调整教程</title>
-    <link href="http://weimumu.top/2020/ckg6e9og70001p8nldb1y510i/"/>
-    <id>http://weimumu.top/2020/ckg6e9og70001p8nldb1y510i/</id>
+    <link href="http://weimumu.top/2020/ckg6epig00001t4nl2cel82c9/"/>
+    <id>http://weimumu.top/2020/ckg6epig00001t4nl2cel82c9/</id>
     <published>2020-08-07T01:29:13.000Z</published>
     <updated>2020-08-07T23:41:16.063Z</updated>
     
@@ -161,8 +168,8 @@
   
   <entry>
     <title>hexo创建分类和tag</title>
-    <link href="http://weimumu.top/2020/ckg6e9ogi0005p8nl9ronc9pa/"/>
-    <id>http://weimumu.top/2020/ckg6e9ogi0005p8nl9ronc9pa/</id>
+    <link href="http://weimumu.top/2020/ckg6epig90005t4nl5jz99f0n/"/>
+    <id>http://weimumu.top/2020/ckg6epig90005t4nl5jz99f0n/</id>
     <published>2020-08-07T00:22:24.000Z</published>
     <updated>2020-08-07T03:51:30.367Z</updated>
     
@@ -187,8 +194,8 @@
   
   <entry>
     <title>hexo+github从0开始创建个人博客</title>
-    <link href="http://weimumu.top/2020/ckg6e9ogg0004p8nlbnck11vt/"/>
-    <id>http://weimumu.top/2020/ckg6e9ogg0004p8nlbnck11vt/</id>
+    <link href="http://weimumu.top/2020/ckg6epig80004t4nlcfkc1c32/"/>
+    <id>http://weimumu.top/2020/ckg6epig80004t4nlcfkc1c32/</id>
     <published>2020-08-06T09:02:23.000Z</published>
     <updated>2020-08-11T10:57:37.989Z</updated>
     
